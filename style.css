@@ -1,0 +1,44 @@
+body {
+    background-color: #660708;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+}
+
+.pizza{
+    border: 2px solid;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.5em;  
+}
+
+.medium_pizza{
+    background-color: #B1A7A6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.large_pizza{
+    background-color: #284B63;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+.small_pizza{
+    background-color: #3C6E71;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.contact_us{
+    background-color: #FDF0D5 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+@media (min-width: 760px ) {
+    .pizzas{
+        display: flex;
+    }
+}
