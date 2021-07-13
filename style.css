@@ -1,16 +1,21 @@
 body {
-    background-color: #660708;
+    background-color: #e0e051;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
-
+    
 }
+.perfect_pizza{
+    text-align: center;
+    font-size: xx-large;
+ 
+}
+    
 
 .pizza{
     border: 2px solid;
     padding: 1em;
     margin: 1em;
     border-radius: 0.5em;  
+    text-align: center;
 }
 
 .medium_pizza{
@@ -35,6 +40,9 @@ body {
 .contact_us{
     background-color: #FDF0D5 ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    
+
     
 }
 @media (min-width: 760px ) {
