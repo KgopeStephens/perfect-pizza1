@@ -1,19 +1,13 @@
 body {
-    background-color:#FEE440;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-
-h1 {
-    text-align: center;
-  }
-
-h2 {
-    text-align: center;
-  }
-
-h3 {
-    text-align: right;
+    background-color: #e0e051;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
-
+.perfect_pizza{
+    text-align: center;
+    font-size: xx-large;
+ 
+}
 .contain {
     margin: 1em;
     margin-bottom: 0.5em;
@@ -57,7 +51,7 @@ h3 {
     display: block;
     margin: auto;
     border-radius: 2em;
-    /* border: none; */
+
     padding: 5px 10px;
     background-color: darkgray;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
@@ -79,90 +73,45 @@ h3 {
     font-size: 12pt;
     font-weight: bold;
 }
+    
 
-.small_pizza {
-    background-color:#12c2a54d;
-    flex: 1;
-}
-
-.small_pizza:hover {
-    box-shadow: 10px 10px #da5353;
-}
-
-.medium_pizza {
-    background-color:#50c75a;
-    flex: 1;
-}
-
-.medium_pizza:hover {
-    box-shadow: 10px 10px #da5353;
-}
-
-.large_pizza {
-    background-color:#00BBF9;
-    flex: 1;
-}
-
-.large_pizza:hover {
-    box-shadow: 10px 10px #da5353;
-}
-
-.contact_us {
-    background-color: #8b7f9b;
-    padding-top: 0.1em;
-    height: 8.5em;
-}
-
-.pizza_img {
+.pizza{
+    border: 2px solid;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.5em;  
     text-align: center;
 }
 
-.pizza_top{
-    position:absolute;
-    bottom: 0;
-    padding-bottom: 0.5em;
+.medium_pizza{
+    background-color: #B1A7A6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
-#contact {
-    margin:0; 
-    padding: 0em;
-    display:inline; 
-    float:left
+.large_pizza{
+    background-color: #284B63;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
 }
 
-#location {
-    margin:0; 
-    padding: 0em;
-    display:inline; 
-    float:right;
+.small_pizza{
+    background-color: #3C6E71;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
 }
 
-.footer {
-    position: relative;
-    bottom: 0;
-    margin-top: 1.5em;
+.contact_us{
+    background-color: #FDF0D5 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-}
+    
 
-@media (min-width: 960px) {
-    .pizzas {
+    
+}
+@media (min-width: 760px ) {
+    .pizzas{
         display: flex;
-    }    
-}
-
-body::-webkit-scrollbar {
-    width: 12px;               
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #f90074;        
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #1b1eb6;   
-    border-radius: 25px;   
-  }
-
-.hidden {
-    display: none;
+    }
 }
