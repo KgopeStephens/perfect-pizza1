@@ -81,16 +81,14 @@ function payment(){
  if (paymentAmt == totalCart){
    // message.innerHTML = "Enjoy your Pizza!";
    alert("Enjoy your Pizza!")
-    const cartItem = document.getElementsByClassName("contain cart")
+    var cartItem = document.getElementsByClassName("contain cart")
     while (cartItem.hasChildNodes()) {
         cartItem.removeChild(cartItem.firstChild)
     }
  } else if (paymentAmt > totalCart) {
     var change = paymentAmt - totalCart;
    alert("Enjoy your Pizza, here is your change R" + change.toFixed(2));
-  const cartItem = document.getElementsByClassName("contain cart")
-    while (cartItem.hasChildNodes()) {
-        cartItem.removeChild(cartItem.firstChild)
+   
  } else {
     message.innerHTML = "Sorry, that is not enough money!";
  }
