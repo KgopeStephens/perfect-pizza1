@@ -80,12 +80,17 @@ function payment(){
     var paymentAmt = Number(payAmt.value);
  if (paymentAmt == totalCart){
     message.innerHTML = "Enjoy your Pizza!";
+    var cartItem = document.getElementsByClassName("item")[0]
+    while (cartItem.hasChildNodes()) {
+        cartItem.removeChild(cartItem.firstChild)
+    }
  } else if (paymentAmt > totalCart) {
     var change = paymentAmt - totalCart;
     message.innerHTML = "Enjoy your Pizza, here is your change R" + change.toFixed(2);
  } else {
     message.innerHTML = "Sorry, that is not enough money!";
  }
+
 }
 
 smallPBtn.addEventListener('click', BtnClick);
