@@ -79,34 +79,28 @@ function payment(){
     message.classList.toggle('hidden');
     var paymentAmt = Number(payAmt.value);
  if (paymentAmt == totalCart){
-   // message.innerHTML = "Enjoy your Pizza!";
-   alert("Enjoy your Pizza!")
-    var cartItem = document.getElementsByClassName("cartTable")
+   message.innerHTML = "Enjoy your Pizza!";
+    var cartItem = document.getElementsByClassName("payOut hidden")[0]
     while (cartItem.hasChildNodes()) {
         cartItem.removeChild(cartItem.firstChild)
     }
  } else if (paymentAmt > totalCart) {
     var change = paymentAmt - totalCart;
-   alert("Enjoy your Pizza, here is your change R" + change.toFixed(2));
+   message.innerHTML = "Enjoy your Pizza, here is your change R" + change.toFixed(2);
    
  } else {
     message.innerHTML = "Sorry, that is not enough money!";
  }
 
 }
-
 smallPBtn.addEventListener('click', BtnClick);
 smallMBtn.addEventListener('click', BtnClick);
 smallPBtnBuy.addEventListener('click',BtnClick);
-
 medPBtn.addEventListener('click', BtnClick);
 medMBtn.addEventListener('click', BtnClick);
 medPBtnBuy.addEventListener('click',BtnClick);
-
 largePBtn.addEventListener('click', BtnClick);
 largeMBtn.addEventListener('click', BtnClick);
 largePBtnBuy.addEventListener('click',BtnClick);
-
 checkOut.addEventListener('click', checkOutClick)
-
 payBtn.addEventListener('click',payment)
