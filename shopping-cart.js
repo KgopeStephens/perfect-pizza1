@@ -81,7 +81,7 @@ function payment(){
  if (paymentAmt == totalCart){
    // message.innerHTML = "Enjoy your Pizza!";
    alert("Enjoy your Pizza!")
-    var cartItem = document.getElementsByClassName("contain cart")
+    var cartItem = document.getElementsByClassName("cartTable")
     while (cartItem.hasChildNodes()) {
         cartItem.removeChild(cartItem.firstChild)
     }
