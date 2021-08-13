@@ -79,7 +79,8 @@ function payment(){
     message.classList.toggle('hidden');
     var paymentAmt = Number(payAmt.value);
  if (paymentAmt == totalCart){
-    message.innerHTML = "Enjoy your Pizza!";
+   // message.innerHTML = "Enjoy your Pizza!";
+   alert("Enjoy your Pizza!")
     var cartItem = document.getElementsByClassName("item")[0]
     while (cartItem.hasChildNodes()) {
         cartItem.removeChild(cartItem.firstChild)
